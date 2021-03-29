@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Űrlap</title>
+</head>
+
+<body>
+    <table>
+        <caption><b>Szállítási cím módosítása</b></caption>
+
+        <tr>
+
+            <td><label for="name">Név:</label><br>
+                <input type="text" id="name" name="name">
+            </td>
+
+            <td>
+                <label for="phonenumber">Telefonszám<br>
+                    <select id="phonenumber" name="phonenumber">
+                        <option value="+36">+36</option>
+                    </select>
+                </label>
+            </td>
+
+            <td>
+                <br>
+                <input type="text" name="telefonszám" id="phone">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="adress">Irányítószám</label><br>
+                <input placeholder="4032" type="text" name="adress">
+            </td>
+
+            <td>
+                <label for="city">Város<br>
+                    <select id="city" name="city">
+                        <option value="debrecen">Debrecen</option>
+                        <option value="budapest">Budapest</option>
+                        <option value="miskolc">Miskolc</option>
+                    </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="country">Ország<br>
+                    <select id="country" name="country">
+                        <option value="magyar">Magyarország</option>
+                    </select>
+            </td>
+            <td colspan="2">
+                <label for="cim">Cím</label><br>
+                <input id="cim" type="text" name="cim">
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3>
+                <input id="submit" type="submit" value="Mentés">
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
